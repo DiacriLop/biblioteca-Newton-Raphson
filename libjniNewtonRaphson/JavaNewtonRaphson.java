@@ -1,10 +1,6 @@
 package libjniNewtonRaphson;
 
 public class JavaNewtonRaphson {
-     static {
-        System.loadLibrary("newtonraphson"); // Carga la biblioteca nativa llamada 'newtonraphson'
-    }
-
     // Método nativo para ejecutar el método de Newton-Raphson en una función seleccionada
     public native void ejecutarNewtonRaphson(int opcion, double x0, int maxIter, double tol);
 
